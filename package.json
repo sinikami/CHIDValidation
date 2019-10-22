@@ -1,0 +1,26 @@
+{
+  "name": "chidvalidation",
+  "version": "1.0.0",
+  "description": "Chinese ID number validation package",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinikami/CHIDValidation.git"
+  },
+  "keywords": [
+    "Chinese ID",
+    "Validation"
+  ],
+  "author": "L.J.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sinikami/CHIDValidation/issues"
+  },
+  "homepage": "https://github.com/sinikami/CHIDValidation#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
