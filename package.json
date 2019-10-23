@@ -1,6 +1,6 @@
 {
   "name": "chidvalidation",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Chinese ID number validation package",
   "main": "index.js",
   "scripts": {

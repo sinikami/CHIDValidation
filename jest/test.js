@@ -22,3 +22,6 @@ test("check:fail  18 length ID ", () => {
 test("check:fail to throw exception", () => {
   expect(() => CHIDValidation("11204416541220243x", null, null)).toThrow();
 })
+test("type error", () => {
+  expect(() => CHIDValidation(11204416541220243)).toThrow();
+})

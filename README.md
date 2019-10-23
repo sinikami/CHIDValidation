@@ -6,7 +6,8 @@ try {
 
   const addresses = undefined; // default: CHIDValidation.addresses;
   const option = undefined;// default: CHIDValidation.option;
-  const rst = CHIDValidation('210421195405030415', option, addresses);
+  const ID = '210421195405030415' // must be string
+  const rst = CHIDValidation(ID, option, addresses);
   
   if (rst.status == true) {
     // success

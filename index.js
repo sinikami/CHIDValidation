@@ -14,7 +14,8 @@ const defaultOption = {
 const CHIDValidation = (sIdNumber, opt = defaultOption, addresses = defaultAddresses) => {
   if (opt == null) throw new Error('option cannot be null.')
   if (addresses == null) throw new Error('addresses cannot be null.')
-  const sIdCard = sIdNumber.toString().replace(/^\s+|\s+$/g, "");
+  if (typeof sIdNumber != "string") throw new Error('ID number must be string.')
+  const sIdCard = sIdNumber.replace(/^\s+|\s+$/g, "");
   //to check id number length that is 18 or 15 and it is possible  to be a "X" at last letter when the length is 18. 
   if (sIdCard.match(/^\d{15}|\d{17}[0-9xX]{1}$/gi) == null) return opt.checklength();
   //to checke city.
